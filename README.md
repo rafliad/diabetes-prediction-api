@@ -11,8 +11,22 @@ app_port: 8000
 
 Ini adalah demo API untuk memprediksi risiko diabetes berdasarkan input gula darah dan tekanan darah.
 
-Aplikasi ini dibuat dengan FastAPI dan dibungkus dalam sebuah Docker container.
+Aplikasi ini dibuat dengan FastAPI, dibungkus dalam sebuah Docker container, dan di-deploy di Hugging Face Spaces.
 
-## Cara Menggunakan
+## Akses Aplikasi
 
-Kunjungi endpoint `/docs` untuk melihat dokumentasi interaktif API dan mencoba endpoint `/predict`.
+Ada dua cara untuk mengakses aplikasi ini:
+
+### 1. Halaman Utama Proyek (Direkomendasikan)
+
+Ini adalah halaman utama yang berisi aplikasi, deskripsi, dan file.
+
+**[https://huggingface.co/spaces/rafliad/diabetes-prediction-api](https://huggingface.co/spaces/rafliad/diabetes-prediction-api)**
+
+### 2. Dokumentasi API Langsung (/docs)
+
+Gunakan link ini untuk langsung membuka dokumentasi interaktif API dan menguji endpoint prediksi.
+
+**[https://rafliad-diabetes-prediction-api.hf.space/docs](https://rafliad-diabetes-prediction-api.hf.space/docs)**
+
+_(Catatan: URL ini adalah URL embedded dari aplikasi. Jika tidak berfungsi, Anda bisa mendapatkannya dengan mengklik kanan pada aplikasi yang berjalan di Halaman Utama dan memilih "Copy Frame Address")_
