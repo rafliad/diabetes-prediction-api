@@ -5,6 +5,7 @@ colorFrom: blue
 colorTo: green
 sdk: docker
 app_port: 8000
+env: ROOT_PATH:/spaces/rafliad/diabetes-prediction-api
 ---
 
 # API Prediksi Diabetes
@@ -15,4 +16,4 @@ Aplikasi ini dibuat dengan FastAPI dan dibungkus dalam sebuah Docker container.
 
 ## Cara Menggunakan
 
-Kunjungi endpoint `/docs` untuk melihat dokumentasi interaktif API dan mencoba endpoint `/predict_diabetes`.
+Kunjungi endpoint `/docs` untuk melihat dokumentasi interaktif API dan mencoba endpoint `/predict`.

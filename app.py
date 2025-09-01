@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
-from sklearn.naive_bayes import GaussianNB  # tambahin ini
+from sklearn.naive_bayes import GaussianNB
+import os
+
+# Dapatkan root_path dari environment variable, defaultnya adalah string kosong ""
+root_path = os.environ.get("ROOT_PATH", "")
 
 # load model
 model = joblib.load("model.pkl")
@@ -11,7 +15,10 @@ class InputData(BaseModel):
     gula_darah: float
     tekanan_darah: float
 
-app = FastAPI()
+app = FastAPI(
+    title="API Prediksi Diabetes (dari Joblib)",
+    root_path=root_path
+)
 
 @app.get("/")
 async def root():
